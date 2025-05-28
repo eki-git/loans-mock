@@ -1,0 +1,134 @@
+:root {
+    --main-color: rgb(1, 36, 186);
+    --accent-color: rgb(9, 216, 98);
+    --text-color: rgb(53, 53, 53);
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Monserrat, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/background.jpg");
+    color: var(--text-color);
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+.logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--main-color);
+    text-decoration: none;
+}
+.navbar {
+}
+.nav-list {
+    display: flex;
+    gap: 40px;
+}
+.nav-list a {
+    font-weight: 700;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.main {
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+}
+.main__intro {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.info__small-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+.info__heading {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--main-color);
+}
+.info__icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+.icons__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: var(--accent-color);
+}
+.item__text {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
+.icons__item::before {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: "Font Awesome 5 Free";
+}
+.icons__item:nth-child(1)::before {
+    content: "\f0c2";
+}
+.icons__item:nth-child(2)::before {
+    content: "\f3d1";
+}
+.icons__item:nth-child(3)::before {
+    content: "\f2f2";
+}
+
+.intro__form {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .13);
+    padding: 30px;
+}
+.form__heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.form__field {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    font-weight: 600;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.form__input {
+    border: none;
+    border-bottom: 2px solid #ededed;
+    padding-bottom: 8px;
+}
+.form__input::placeholder {
+    opacity: 0.5;
+}
+
+.form__button {
+    background-color: var(--accent-color);
+    border-radius: 8px;
+    margin-top: 20px;
+    border: none;
+    padding: 20px 30px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
